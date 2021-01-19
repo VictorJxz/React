@@ -1,8 +1,16 @@
 
-import { heroes } from './data/heroes';
+// Ternary
 
-const getHeroeById = ( id ) => {
-    return heroes.find( element => element.id === id);
-}
+const active = true;
 
-console.log( getHeroeById(2) );
+/* if ( !active ){
+    message = 'Active';
+} else {
+    message = 'Inactive';
+} */
+
+//const message = ( active ) ? 'Active': 'Inactive';
+const message = !active && 'Active';
+
+
+console.log( message );
